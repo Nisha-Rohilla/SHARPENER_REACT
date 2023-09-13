@@ -1,13 +1,13 @@
-export function ExpenseItem(){
+import Desc from "./Desc"
+
+export function ExpenseItem(props){
     return(
         <div>
             <div>
-                <h2>ExpenseItem</h2>
-                <p>Food Rs 10</p>
-                
-                <p>Movies Rs 100</p>
-                <p>Petrol Rs 200</p>
+                <Desc title ={props.title} localExpenditure={props.localExpenditure}></Desc>
+                <h3>{props.amount}</h3>
             </div>
+            
         </div>
     )
 }
